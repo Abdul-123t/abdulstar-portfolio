@@ -25,32 +25,32 @@ export const HowIBuildSection: React.FC = () => {
           {HOW_I_BUILD_STEPS.map((step, idx) => (
             <div
               key={step.number}
-              className="bg-[#121212] border border-neutral-800 p-6 sm:p-8 hover:border-neutral-500 transition-all duration-300 grid grid-cols-1 md:grid-cols-12 gap-6 items-center group"
+              className="bg-[#121212] border border-neutral-800 p-6 sm:p-8 hover:border-neutral-500 transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-6 items-start lg:items-center group"
             >
               {/* Step Number & Title */}
-              <div className="md:col-span-4 flex items-center gap-4">
-                <span className="font-mono text-2xl font-extrabold text-black bg-white px-3 py-1">
+              <div className="lg:col-span-4 flex items-center gap-4">
+                <span className="font-mono text-xl sm:text-2xl font-extrabold text-black bg-white px-3 py-1 shrink-0">
                   {step.number}
                 </span>
                 <div>
                   <span className="font-mono text-[10px] text-neutral-500 uppercase tracking-widest">
                     PHASE 0{idx + 1}
                   </span>
-                  <h3 className="font-heading font-extrabold text-2xl text-white tracking-wider">
+                  <h3 className="font-heading font-extrabold text-xl sm:text-2xl text-white tracking-wider">
                     {step.title}
                   </h3>
                 </div>
               </div>
 
               {/* Description */}
-              <div className="md:col-span-5">
+              <div className="lg:col-span-5">
                 <p className="font-sans text-sm sm:text-base text-neutral-300 font-light leading-relaxed">
                   "{step.description}"
                 </p>
               </div>
 
               {/* Deliverables Badges */}
-              <div className="md:col-span-3 flex flex-wrap gap-1.5 justify-start md:justify-end">
+              <div className="lg:col-span-3 flex flex-wrap gap-1.5 justify-start lg:justify-end">
                 {step.deliverables.map((deliv, i) => (
                   <span
                     key={i}

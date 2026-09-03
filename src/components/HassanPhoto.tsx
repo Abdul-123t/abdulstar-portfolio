@@ -14,7 +14,7 @@ export const HassanPhoto: React.FC<HassanPhotoProps> = ({
   const sizeClasses = {
     sm: 'w-24 h-24',
     md: 'w-48 h-56 sm:w-56 sm:h-64',
-    lg: 'w-64 h-72 sm:w-80 sm:h-96',
+    lg: 'w-56 h-64 sm:w-80 sm:h-96 max-w-full',
   }[size];
 
   return (

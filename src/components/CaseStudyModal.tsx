@@ -47,37 +47,37 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, onClose
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Sticky Header */}
-        <div className="bg-[#121212] border-b border-neutral-800 px-6 sm:px-8 py-5 flex items-center justify-between shrink-0">
-          <div className="flex items-center gap-4">
-            <span className="font-mono text-xs font-bold text-black bg-white px-2.5 py-1">
-              CASE STUDY NO. {project.number}
+        <div className="bg-[#121212] border-b border-neutral-800 px-4 sm:px-8 py-4 sm:py-5 flex flex-row items-center justify-between gap-3 sm:gap-4 shrink-0">
+          <div className="flex items-center gap-3 sm:gap-4 min-w-0">
+            <span className="font-mono text-[10px] sm:text-xs font-bold text-black bg-white px-2 sm:px-2.5 py-0.5 sm:py-1 shrink-0">
+              NO. {project.number}
             </span>
-            <div>
-              <h2 className="font-heading font-extrabold text-xl sm:text-2xl text-white tracking-wider">
+            <div className="min-w-0">
+              <h2 className="font-heading font-extrabold text-base sm:text-2xl text-white tracking-wider truncate">
                 {project.name}
               </h2>
-              <p className="font-mono text-[10px] text-neutral-400 uppercase tracking-widest">
+              <p className="font-mono text-[9px] sm:text-[10px] text-neutral-400 uppercase tracking-widest truncate">
                 {project.category}
               </p>
             </div>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
             <a
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center gap-2 px-4 py-2 bg-neutral-900 border border-neutral-700 hover:border-white text-white font-mono text-xs font-bold uppercase tracking-wider transition-colors"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-neutral-900 border border-neutral-700 hover:border-white text-white font-mono text-[10px] sm:text-xs font-bold uppercase tracking-wider transition-colors"
             >
-              <span>LIVE URL</span>
-              <ArrowUpRight className="w-3.5 h-3.5" />
+              <span>LIVE</span>
+              <ArrowUpRight className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
             </a>
             <button
               onClick={onClose}
-              className="p-2 bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-neutral-300 hover:text-white transition-colors"
+              className="p-1.5 sm:p-2 bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-neutral-300 hover:text-white transition-colors"
               aria-label="Close Case Study"
             >
-              <X className="w-5 h-5" />
+              <X className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
           </div>
         </div>

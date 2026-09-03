@@ -43,16 +43,16 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => 
         {/* Left Branding */}
         <button
           onClick={() => handleNavClick('hero')}
-          className="group flex items-center gap-3 text-left focus:outline-none"
+          className="group flex items-center gap-3 text-left focus:outline-none min-w-0"
         >
-          <div className="flex flex-col">
-            <span className="font-heading font-extrabold text-sm sm:text-base tracking-wider text-white group-hover:text-neutral-300 transition-colors">
+          <div className="flex flex-col min-w-0">
+            <span className="font-heading font-extrabold text-xs sm:text-sm md:text-base tracking-wider text-white group-hover:text-neutral-300 transition-colors truncate">
               HASSAN ABDULSATAR OLAMIDE
             </span>
-            <span className="font-mono text-[10px] tracking-widest text-neutral-400 uppercase flex items-center gap-2 mt-0.5">
+            <span className="font-mono text-[9px] sm:text-[10px] tracking-widest text-neutral-400 uppercase flex items-center gap-1.5 sm:gap-2 mt-0.5 truncate">
               <span>PRODUCT BUILDER</span>
-              <span className="w-1 h-1 rounded-full bg-neutral-600"></span>
-              <span className="text-neutral-500">NAMACO AFFILIATED</span>
+              <span className="w-1 h-1 rounded-full bg-neutral-600 shrink-0"></span>
+              <span className="text-neutral-500 truncate">NAMACO AFFILIATED</span>
             </span>
           </div>
         </button>
@@ -91,7 +91,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => 
         {/* Mobile Menu Toggle Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2 text-white hover:text-neutral-300 focus:outline-none"
+          className="md:hidden p-2 text-white hover:text-neutral-300 focus:outline-none shrink-0"
           aria-label="Toggle navigation menu"
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -100,16 +100,16 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => 
 
       {/* Mobile Editorial Overlay Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden fixed inset-0 top-[60px] bg-[#0A0A0A] z-40 flex flex-col justify-between p-8 border-t border-neutral-800 animate-in fade-in duration-200">
-          <div className="flex flex-col gap-6 pt-6">
-            <p className="font-mono text-[10px] uppercase tracking-widest text-neutral-500 mb-2">
+        <div className="md:hidden fixed inset-x-0 top-[60px] h-[calc(100vh-60px)] bg-[#0A0A0A] z-40 flex flex-col justify-between p-6 sm:p-8 border-t border-neutral-800 animate-in fade-in duration-200 overflow-y-auto">
+          <div className="flex flex-col gap-5 pt-4">
+            <p className="font-mono text-[10px] uppercase tracking-widest text-neutral-500 mb-1">
               Navigation
             </p>
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
-                className={`text-left font-heading text-2xl font-bold tracking-wider py-2 uppercase flex items-center justify-between border-b border-neutral-900 ${
+                className={`text-left font-heading text-xl sm:text-2xl font-bold tracking-wider py-2 uppercase flex items-center justify-between border-b border-neutral-900 ${
                   activeSection === item.id ? 'text-white border-white' : 'text-neutral-400'
                 }`}
               >
@@ -119,10 +119,10 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => 
             ))}
           </div>
 
-          <div className="space-y-6 pt-8 border-t border-neutral-800">
+          <div className="space-y-6 pt-6 pb-4 border-t border-neutral-800 mt-6">
             <button
               onClick={() => handleNavClick('contact')}
-              className="w-full py-4 bg-white text-black font-mono text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2"
+              className="w-full py-3.5 bg-white text-black font-mono text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2"
             >
               <span>LET'S CONNECT</span>
               <ArrowUpRight className="w-4 h-4" />

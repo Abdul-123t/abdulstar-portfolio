@@ -16,7 +16,7 @@ export const FooterSection: React.FC<FooterProps> = ({ onNavigate }) => {
     <footer className="bg-[#0A0A0A] border-t border-neutral-900 py-16 px-6 sm:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto space-y-12">
         {/* Main Footer Row */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start pb-12 border-b border-neutral-900">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-8 items-start pb-12 border-b border-neutral-900">
           {/* Identity Column */}
           <div className="md:col-span-5 space-y-4">
             <h3 className="font-heading font-extrabold text-xl text-white tracking-wider">

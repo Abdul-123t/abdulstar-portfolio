@@ -37,12 +37,12 @@ export const SelectedWork: React.FC<SelectedWorkProps> = ({ onOpenCaseStudy }) =
           </div>
 
           {/* Filter Bar */}
-          <div className="flex flex-wrap items-center gap-2 bg-[#121212] p-1.5 border border-neutral-800 self-start md:self-auto">
+          <div className="flex items-center gap-1.5 sm:gap-2 bg-[#121212] p-1.5 border border-neutral-800 self-stretch sm:self-start md:self-auto overflow-x-auto max-w-full pb-2 sm:pb-1.5">
             {filters.map((filter) => (
               <button
                 key={filter}
                 onClick={() => setActiveFilter(filter)}
-                className={`font-mono text-xs tracking-wider uppercase px-3.5 py-2 transition-all duration-200 ${
+                className={`font-mono text-[11px] sm:text-xs tracking-wider uppercase px-3 sm:px-3.5 py-1.5 sm:py-2 whitespace-nowrap transition-all duration-200 shrink-0 ${
                   activeFilter === filter
                     ? 'bg-white text-black font-bold shadow-sm'
                     : 'text-neutral-400 hover:text-white hover:bg-neutral-800/60'
@@ -84,7 +84,7 @@ export const SelectedWork: React.FC<SelectedWorkProps> = ({ onOpenCaseStudy }) =
             </div>
 
             {/* Business Work Cards Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {CLIENT_BUSINESS_WORK.map((biz) => (
                 <div
                   key={biz.id}

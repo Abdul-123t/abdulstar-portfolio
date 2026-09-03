@@ -167,13 +167,13 @@ export const ContactSection: React.FC = () => {
           </div>
 
           {/* Right Column: Direct Inquiry Form */}
-          <div className="lg:col-span-7 bg-[#121212] border border-neutral-800 p-8 sm:p-10">
-            <h3 className="font-heading font-extrabold text-2xl text-white tracking-wide mb-6">
+          <div className="lg:col-span-7 bg-[#121212] border border-neutral-800 p-6 sm:p-10">
+            <h3 className="font-heading font-extrabold text-xl sm:text-2xl text-white tracking-wide mb-6">
               START A PRODUCT CONVERSATION
             </h3>
 
             {submitted ? (
-              <div className="bg-[#0A0A0A] border border-emerald-500/40 p-8 space-y-4 text-center">
+              <div className="bg-[#0A0A0A] border border-emerald-500/40 p-6 sm:p-8 space-y-4 text-center">
                 <CheckCircle2 className="w-10 h-10 text-emerald-400 mx-auto" />
                 <h4 className="font-heading font-bold text-xl text-white">MESSAGE PREPARED</h4>
                 <p className="font-sans text-sm text-neutral-300">
@@ -198,7 +198,7 @@ export const ContactSection: React.FC = () => {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder="e.g. Founder, Technical Executive, Client"
-                    className="w-full bg-[#0A0A0A] border border-neutral-800 px-4 py-3 text-white font-sans text-sm focus:outline-none focus:border-white transition-colors"
+                    className="w-full bg-[#0A0A0A] border border-neutral-800 px-4 py-3 text-white font-sans text-base sm:text-sm focus:outline-none focus:border-white transition-colors"
                   />
                 </div>
 
@@ -212,7 +212,7 @@ export const ContactSection: React.FC = () => {
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     placeholder="olamide@example.com"
-                    className="w-full bg-[#0A0A0A] border border-neutral-800 px-4 py-3 text-white font-sans text-sm focus:outline-none focus:border-white transition-colors"
+                    className="w-full bg-[#0A0A0A] border border-neutral-800 px-4 py-3 text-white font-sans text-base sm:text-sm focus:outline-none focus:border-white transition-colors"
                   />
                 </div>
 
@@ -226,7 +226,7 @@ export const ContactSection: React.FC = () => {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder="Describe your idea, platform concept, or project scope..."
-                    className="w-full bg-[#0A0A0A] border border-neutral-800 p-4 text-white font-sans text-sm focus:outline-none focus:border-white transition-colors resize-none"
+                    className="w-full bg-[#0A0A0A] border border-neutral-800 p-4 text-white font-sans text-base sm:text-sm focus:outline-none focus:border-white transition-colors resize-none"
                   ></textarea>
                 </div>
 

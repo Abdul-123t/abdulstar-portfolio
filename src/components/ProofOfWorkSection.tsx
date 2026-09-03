@@ -97,8 +97,8 @@ export const ProofOfWorkSection: React.FC = () => {
             </div>
 
             {/* Code Body */}
-            <div className="p-6 overflow-x-auto text-neutral-300 bg-[#0A0A0A] leading-relaxed">
-              <pre className="font-mono text-xs text-neutral-200">
+            <div className="p-4 sm:p-6 overflow-x-auto text-neutral-300 bg-[#0A0A0A] leading-relaxed">
+              <pre className="font-mono text-xs text-neutral-200 whitespace-pre overflow-x-auto">
                 <code>{activeItem.snippet?.code}</code>
               </pre>
             </div>

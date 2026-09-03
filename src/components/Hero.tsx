@@ -45,26 +45,26 @@ export const Hero: React.FC<HeroProps> = ({ onExploreWork, onConnect }) => {
             </div>
 
             {/* Oversized Name Header */}
-            <h1 className="font-heading font-extrabold text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-white uppercase leading-[0.95] text-balance">
-              HASSAN ABDULSATAR <br />
-              <span className="text-neutral-400">OLAMIDE</span>
+            <h1 className="font-heading font-extrabold text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl tracking-tight text-white uppercase leading-[0.95] text-balance break-words">
+              HASSAN ABDULSATAR <br className="hidden sm:inline" />
+              <span className="text-neutral-400"> OLAMIDE</span>
             </h1>
 
             {/* Primary Headline */}
-            <p className="font-heading font-medium text-2xl sm:text-3xl lg:text-4xl text-neutral-200 tracking-tight leading-snug pt-2">
+            <p className="font-heading font-medium text-xl sm:text-3xl lg:text-4xl text-neutral-200 tracking-tight leading-snug pt-2">
               "{PERSONAL_INFO.headline}"
             </p>
 
             {/* Supporting Copy */}
-            <p className="font-sans text-base sm:text-lg text-neutral-400 max-w-2xl leading-relaxed font-normal">
+            <p className="font-sans text-sm sm:text-lg text-neutral-400 max-w-2xl leading-relaxed font-normal">
               {PERSONAL_INFO.supportingCopy}
             </p>
 
             {/* CTAs */}
-            <div className="pt-6 flex flex-wrap items-center gap-4 sm:gap-6">
+            <div className="pt-6 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-6">
               <button
                 onClick={onExploreWork}
-                className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-black font-mono text-xs font-bold tracking-widest uppercase transition-all duration-300 hover:bg-neutral-200 active:scale-95 shadow-lg"
+                className="group relative inline-flex items-center justify-center gap-3 px-6 py-3.5 sm:px-8 sm:py-4 bg-white text-black font-mono text-xs font-bold tracking-widest uppercase transition-all duration-300 hover:bg-neutral-200 active:scale-95 shadow-lg w-full sm:w-auto"
               >
                 <span>VIEW SELECTED WORK</span>
                 <ArrowDown className="w-4 h-4 transition-transform duration-300 group-hover:translate-y-1" />
@@ -72,7 +72,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreWork, onConnect }) => {
 
               <button
                 onClick={onConnect}
-                className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent border border-neutral-700 text-white font-mono text-xs font-bold tracking-widest uppercase transition-all duration-300 hover:border-white hover:bg-white/5 active:scale-95"
+                className="group inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:px-8 sm:py-4 bg-transparent border border-neutral-700 text-white font-mono text-xs font-bold tracking-widest uppercase transition-all duration-300 hover:border-white hover:bg-white/5 active:scale-95 w-full sm:w-auto"
               >
                 <span>LET'S CONNECT</span>
                 <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

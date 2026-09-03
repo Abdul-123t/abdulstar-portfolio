@@ -6,10 +6,10 @@ export const CurrentlyBuildingSection: React.FC = () => {
   return (
     <section className="py-20 lg:py-28 px-6 sm:px-8 lg:px-12 bg-[#0A0A0A] border-b border-neutral-900">
       <div className="max-w-7xl mx-auto">
-        <div className="bg-[#121212] border border-neutral-800 p-8 sm:p-12 lg:p-16 relative overflow-hidden group hover:border-neutral-600 transition-all duration-300">
+        <div className="bg-[#121212] border border-neutral-800 p-6 sm:p-10 lg:p-14 relative overflow-hidden group hover:border-neutral-600 transition-all duration-300">
           {/* Top Label */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-8 border-b border-neutral-800">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#0A0A0A] border border-neutral-800">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#0A0A0A] border border-neutral-800 self-start sm:self-auto">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
               <span className="font-mono text-xs text-neutral-300 font-bold tracking-widest uppercase">
                 CURRENTLY BUILDING
@@ -22,13 +22,13 @@ export const CurrentlyBuildingSection: React.FC = () => {
           </div>
 
           {/* Main Showcase Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 py-10 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 py-8 sm:py-10 items-center">
             <div className="lg:col-span-8 space-y-6">
-              <h3 className="font-heading font-extrabold text-4xl sm:text-6xl text-white tracking-tight">
+              <h3 className="font-heading font-extrabold text-3xl sm:text-5xl lg:text-6xl text-white tracking-tight">
                 VEYRA
               </h3>
 
-              <p className="font-sans text-xl sm:text-2xl text-neutral-200 font-light leading-relaxed">
+              <p className="font-sans text-lg sm:text-2xl text-neutral-200 font-light leading-relaxed">
                 "Exploring better ways for ambitious builders to find the right people, form teams, and build together."
               </p>
 
@@ -41,7 +41,7 @@ export const CurrentlyBuildingSection: React.FC = () => {
                   href="https://vetra-waitlist-azure.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 px-8 py-4 bg-white text-black font-mono text-xs font-bold tracking-widest uppercase hover:bg-neutral-200 transition-colors shadow-lg"
+                  className="inline-flex items-center justify-center gap-3 px-6 py-3.5 sm:px-8 sm:py-4 bg-white text-black font-mono text-xs font-bold tracking-widest uppercase hover:bg-neutral-200 transition-colors shadow-lg w-full sm:w-auto"
                 >
                   <span>JOIN VEYRA WAITLIST</span>
                   <ArrowUpRight className="w-4 h-4" />

@@ -19,7 +19,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenCaseStu
             <span className="w-2.5 h-2.5 rounded-full bg-neutral-700"></span>
             <span className="w-2.5 h-2.5 rounded-full bg-neutral-700"></span>
           </div>
-          <div className="font-mono text-[10px] text-neutral-400 bg-[#0A0A0A] px-3 py-0.5 rounded border border-neutral-800 truncate max-w-[200px]">
+          <div className="font-mono text-[10px] text-neutral-400 bg-[#0A0A0A] px-2.5 sm:px-3 py-0.5 rounded border border-neutral-800 truncate max-w-[120px] sm:max-w-[200px]">
             {project.liveUrl.replace('https://', '')}
           </div>
           <span className="font-mono text-[10px] text-neutral-500 font-bold">
@@ -28,13 +28,13 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenCaseStu
         </div>
 
         {/* Mockup Canvas / Interface Details */}
-        <div className="flex-1 p-6 flex flex-col justify-between relative bg-editorial-grid">
+        <div className="flex-1 p-4 sm:p-6 flex flex-col justify-between relative bg-editorial-grid">
           <div className="flex items-center justify-between z-10">
             <span className="font-mono text-xs text-white font-bold tracking-widest bg-neutral-900/90 border border-neutral-700 px-2.5 py-1">
               NO. {project.number}
             </span>
             {project.mockupDetails?.badge && (
-              <span className="font-mono text-[10px] text-neutral-400 uppercase tracking-widest border border-neutral-800 px-2 py-0.5 bg-black/60">
+              <span className="font-mono text-[10px] text-neutral-400 uppercase tracking-widest border border-neutral-800 px-2 py-0.5 bg-black/60 truncate max-w-[150px] sm:max-w-none">
                 {project.mockupDetails.badge}
               </span>
             )}
@@ -42,9 +42,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenCaseStu
 
           {/* Project Interface Feature Mockup Box */}
           <div className="my-auto py-4 z-10">
-            <div className="bg-[#121212]/95 border border-neutral-800 p-4 space-y-3 backdrop-blur-sm group-hover:border-neutral-600 transition-colors">
+            <div className="bg-[#121212]/95 border border-neutral-800 p-3.5 sm:p-4 space-y-3 backdrop-blur-sm group-hover:border-neutral-600 transition-colors">
               <div className="flex items-center justify-between">
-                <span className="font-heading font-extrabold text-xl text-white tracking-wider">
+                <span className="font-heading font-extrabold text-lg sm:text-xl text-white tracking-wider">
                   {project.name}
                 </span>
                 <span className="font-mono text-[10px] text-neutral-500 uppercase">
@@ -66,8 +66,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenCaseStu
           </div>
 
           {/* Bottom Badges */}
-          <div className="flex items-center justify-between z-10">
-            <div className="flex flex-wrap gap-1.5">
+          <div className="flex items-center justify-between z-10 gap-2">
+            <div className="flex flex-wrap gap-1.5 overflow-hidden max-h-7">
               {project.technologies.slice(0, 3).map((tech, i) => (
                 <span key={i} className="font-mono text-[9px] text-neutral-400 bg-neutral-900 border border-neutral-800 px-2 py-0.5">
                   {tech}
@@ -75,9 +75,10 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenCaseStu
               ))}
             </div>
             {project.caseStudy && (
-              <span className="font-mono text-[10px] text-emerald-400 flex items-center gap-1">
+              <span className="font-mono text-[10px] text-emerald-400 flex items-center gap-1 shrink-0">
                 <FileText className="w-3 h-3" />
-                CASE STUDY READY
+                <span className="hidden sm:inline">CASE STUDY READY</span>
+                <span className="sm:hidden">READY</span>
               </span>
             )}
           </div>
@@ -85,14 +86,14 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenCaseStu
       </div>
 
       {/* Card Details Body */}
-      <div className="p-6 sm:p-8 flex-1 flex flex-col justify-between space-y-6">
+      <div className="p-5 sm:p-8 flex-1 flex flex-col justify-between space-y-6">
         <div className="space-y-3">
           <div className="flex items-start justify-between gap-4">
             <div>
               <span className="font-mono text-[11px] uppercase tracking-widest text-neutral-500">
                 {project.category}
               </span>
-              <h3 className="font-heading font-extrabold text-2xl sm:text-3xl text-white tracking-tight mt-1">
+              <h3 className="font-heading font-extrabold text-xl sm:text-3xl text-white tracking-tight mt-1">
                 {project.name}
               </h3>
             </div>
@@ -101,18 +102,18 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenCaseStu
             </span>
           </div>
 
-          <p className="font-sans text-sm text-neutral-400 leading-relaxed font-light">
+          <p className="font-sans text-xs sm:text-sm text-neutral-400 leading-relaxed font-light">
             "{project.description}"
           </p>
         </div>
 
         {/* Action CTAs */}
-        <div className="pt-4 border-t border-neutral-800/80 flex flex-wrap items-center justify-between gap-3">
+        <div className="pt-4 border-t border-neutral-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <a
             href={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="group/link inline-flex items-center gap-2 font-mono text-xs font-bold text-white uppercase tracking-widest hover:text-neutral-300 transition-colors py-2"
+            className="group/link inline-flex items-center justify-center sm:justify-start gap-2 font-mono text-xs font-bold text-white uppercase tracking-widest hover:text-neutral-300 transition-colors py-2"
           >
             <span>VIEW PROJECT</span>
             <ArrowUpRight className="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
@@ -121,7 +122,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenCaseStu
           {project.caseStudy && (
             <button
               onClick={() => onOpenCaseStudy(project)}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-white font-mono text-xs font-semibold uppercase tracking-wider transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-4 py-2.5 sm:py-2 bg-neutral-900 hover:bg-neutral-800 border border-neutral-700 text-white font-mono text-xs font-semibold uppercase tracking-wider transition-colors w-full sm:w-auto"
             >
               <FileText className="w-3.5 h-3.5 text-neutral-400" />
               <span>CASE STUDY</span>
