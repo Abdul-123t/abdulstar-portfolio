@@ -63,6 +63,7 @@ export interface ClientBusinessWork {
   description: string;
   tech: string[];
   liveUrl?: string;
+  googleProfileUrl?: string;
   previewImage: string;
 }
 
