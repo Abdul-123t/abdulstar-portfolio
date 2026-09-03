@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, Instagram, ArrowUpRight, Send, CheckCircle2 } from 'lucide-react';
+import { Mail, Phone, Instagram, Linkedin, ArrowUpRight, Send, CheckCircle2, MessageSquare } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 
 export const ContactSection: React.FC = () => {
@@ -52,17 +52,57 @@ export const ContactSection: React.FC = () => {
                 </a>
               </div>
 
-              {/* Phone */}
+              {/* Phone & WhatsApp */}
+              <div className="bg-[#121212] border border-neutral-800 p-6 space-y-3 hover:border-neutral-600 transition-colors">
+                <div className="flex items-center justify-between font-mono text-[10px] text-neutral-500 uppercase tracking-widest">
+                  <div className="flex items-center gap-2">
+                    <Phone className="w-3.5 h-3.5 text-white" />
+                    PHONE / WHATSAPP CONTACT
+                  </div>
+                  <span className="text-[9px] text-emerald-400 font-bold bg-emerald-950/60 border border-emerald-800/60 px-2 py-0.5">WHATSAPP AVAILABLE</span>
+                </div>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
+                  <a
+                    href={`tel:${PERSONAL_INFO.phone}`}
+                    className="font-mono text-base sm:text-lg text-white font-bold hover:underline block"
+                  >
+                    {PERSONAL_INFO.phone}
+                  </a>
+                  <div className="flex items-center gap-2">
+                    <a
+                      href={`tel:${PERSONAL_INFO.phone}`}
+                      className="font-mono text-[11px] text-neutral-300 hover:text-white uppercase tracking-wider flex items-center gap-1 bg-neutral-900 border border-neutral-700 px-2.5 py-1"
+                    >
+                      <Phone className="w-3 h-3" />
+                      <span>Call</span>
+                    </a>
+                    <a
+                      href={PERSONAL_INFO.whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-mono text-[11px] text-emerald-400 hover:text-emerald-300 font-bold uppercase tracking-wider flex items-center gap-1 bg-emerald-950/40 border border-emerald-800/60 px-2.5 py-1"
+                    >
+                      <MessageSquare className="w-3 h-3" />
+                      <span>WhatsApp</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* LinkedIn */}
               <div className="bg-[#121212] border border-neutral-800 p-6 space-y-2 hover:border-neutral-600 transition-colors">
                 <div className="flex items-center gap-2 font-mono text-[10px] text-neutral-500 uppercase tracking-widest">
-                  <Phone className="w-3.5 h-3.5 text-white" />
-                  PHONE / DIRECT CONTACT
+                  <Linkedin className="w-3.5 h-3.5 text-white" />
+                  LINKEDIN PROFILE
                 </div>
                 <a
-                  href={`tel:${PERSONAL_INFO.phone}`}
-                  className="font-mono text-base sm:text-lg text-white font-bold hover:underline block"
+                  href={PERSONAL_INFO.linkedinUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-mono text-base sm:text-lg text-white font-bold hover:underline flex items-center justify-between"
                 >
-                  {PERSONAL_INFO.phone}
+                  <span>{PERSONAL_INFO.linkedin}</span>
+                  <ArrowUpRight className="w-4 h-4 text-neutral-400" />
                 </a>
               </div>
 
@@ -85,23 +125,43 @@ export const ContactSection: React.FC = () => {
             </div>
 
             {/* Quick Action Buttons */}
-            <div className="pt-4 flex flex-col sm:flex-row gap-4">
+            <div className="pt-4 flex flex-wrap gap-3">
+              <a
+                href={PERSONAL_INFO.whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-emerald-600 text-white font-mono text-xs font-bold uppercase tracking-widest hover:bg-emerald-500 transition-colors flex-1 sm:flex-none"
+              >
+                <MessageSquare className="w-4 h-4" />
+                <span>CHAT ON WHATSAPP</span>
+              </a>
+
+              <a
+                href={PERSONAL_INFO.linkedinUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#0A66C2] text-white font-mono text-xs font-bold uppercase tracking-widest hover:bg-[#084e96] transition-colors flex-1 sm:flex-none"
+              >
+                <Linkedin className="w-4 h-4" />
+                <span>LINKEDIN</span>
+              </a>
+
               <a
                 href={`mailto:${PERSONAL_INFO.email}`}
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-black font-mono text-xs font-bold uppercase tracking-widest hover:bg-neutral-200 transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-white text-black font-mono text-xs font-bold uppercase tracking-widest hover:bg-neutral-200 transition-colors flex-1 sm:flex-none"
               >
-                <span>SEND AN EMAIL</span>
                 <Mail className="w-4 h-4" />
+                <span>EMAIL</span>
               </a>
 
               <a
                 href={PERSONAL_INFO.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent border border-neutral-700 text-white font-mono text-xs font-bold uppercase tracking-widest hover:border-white transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-transparent border border-neutral-700 text-white font-mono text-xs font-bold uppercase tracking-widest hover:border-white transition-colors flex-1 sm:flex-none"
               >
-                <span>VIEW INSTAGRAM</span>
                 <Instagram className="w-4 h-4" />
+                <span>INSTAGRAM</span>
               </a>
             </div>
           </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 import { NamacoLogo } from './NamacoLogo';
-import { Mail, Phone, Instagram, ArrowUp } from 'lucide-react';
+import { Mail, Phone, Instagram, Linkedin, ArrowUp, MessageSquare } from 'lucide-react';
 
 interface FooterProps {
   onNavigate: (sectionId: string) => void;
@@ -67,7 +67,29 @@ export const FooterSection: React.FC<FooterProps> = ({ onNavigate }) => {
               <p className="flex items-center gap-2">
                 <Phone className="w-3.5 h-3.5 text-neutral-500" />
                 <a href={`tel:${PERSONAL_INFO.phone}`} className="hover:text-white transition-colors">
-                  {PERSONAL_INFO.phone}
+                  {PERSONAL_INFO.phone} (Call)
+                </a>
+              </p>
+              <p className="flex items-center gap-2">
+                <MessageSquare className="w-3.5 h-3.5 text-emerald-500" />
+                <a
+                  href={PERSONAL_INFO.whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-emerald-400 font-bold hover:underline transition-colors"
+                >
+                  WhatsApp ({PERSONAL_INFO.phone})
+                </a>
+              </p>
+              <p className="flex items-center gap-2">
+                <Linkedin className="w-3.5 h-3.5 text-neutral-500" />
+                <a
+                  href={PERSONAL_INFO.linkedinUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  {PERSONAL_INFO.linkedin}
                 </a>
               </p>
               <p className="flex items-center gap-2">

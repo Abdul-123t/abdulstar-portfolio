@@ -12,8 +12,12 @@ export const PERSONAL_INFO = {
   brandStatement: "Building with a long-term technology company mindset under NAMACO TECHNOLOGY NIGERIA LIMITED.",
   email: "olamideh825@gmail.com",
   phone: "08051842700",
+  whatsappNumber: "+2348051842700",
+  whatsappUrl: "https://wa.me/2348051842700",
   instagram: "@namacotechnology",
   instagramUrl: "https://www.instagram.com/namacotechnology",
+  linkedin: "Abdulsatar Hassan",
+  linkedinUrl: "https://www.linkedin.com/in/abdulsatar-hassan-31778535a/",
   location: "Nigeria",
   year: "2026",
 };
