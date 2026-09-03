@@ -43,15 +43,15 @@ export const Positioning: React.FC = () => {
                 return (
                   <div
                     key={idx}
-                    className="flex items-center justify-between p-3 bg-[#121212] border border-neutral-800/80 hover:border-neutral-600 transition-colors group"
+                    className="flex flex-col xs:flex-row items-start xs:items-center justify-between gap-1 xs:gap-3 p-3 bg-[#121212] border border-neutral-800/80 hover:border-neutral-600 transition-colors group"
                   >
-                    <div className="flex items-center gap-3">
-                      <Icon className="w-4 h-4 text-neutral-400 group-hover:text-white transition-colors" />
-                      <span className="font-mono text-xs text-neutral-200 font-bold tracking-wider">
+                    <div className="flex items-center gap-2.5 min-w-0">
+                      <Icon className="w-4 h-4 text-neutral-400 group-hover:text-white transition-colors shrink-0" />
+                      <span className="font-mono text-xs text-neutral-200 font-bold tracking-wider truncate">
                         {pillar.label}
                       </span>
                     </div>
-                    <span className="font-mono text-[10px] text-neutral-500">
+                    <span className="font-mono text-[10px] text-neutral-500 shrink-0">
                       {pillar.desc}
                     </span>
                   </div>

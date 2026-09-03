@@ -11,7 +11,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenCaseStu
   return (
     <div className="group bg-[#121212] border border-neutral-800 hover:border-neutral-500 transition-all duration-300 flex flex-col justify-between overflow-hidden">
       {/* Visual Header / Mockup Representation */}
-      <div className="relative w-full aspect-[16/10] bg-[#0A0A0A] border-b border-neutral-800 overflow-hidden flex flex-col">
+      <div className="relative w-full min-h-[250px] sm:aspect-[16/10] bg-[#0A0A0A] border-b border-neutral-800 overflow-hidden flex flex-col">
         {/* Browser Mockup Top Bar */}
         <div className="w-full bg-[#181818] border-b border-neutral-800 px-4 py-2.5 flex items-center justify-between shrink-0">
           <div className="flex items-center gap-2">

@@ -10,7 +10,7 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onExploreWork, onConnect }) => {
   return (
-    <section id="hero" className="relative min-h-[92vh] flex flex-col justify-between pt-28 pb-12 px-6 sm:px-8 lg:px-12 border-b border-neutral-900 bg-editorial-grid">
+    <section id="hero" className="relative min-h-[92vh] flex flex-col justify-between pt-28 pb-12 px-6 sm:px-8 lg:px-12 border-b border-neutral-900 bg-editorial-grid overflow-hidden">
       {/* Background radial glow */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-white/[0.015] blur-3xl rounded-full pointer-events-none" />
 

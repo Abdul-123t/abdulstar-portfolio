@@ -7,11 +7,17 @@
     --font-mono: 'Space Mono', monospace;
   }
 
+  html {
+    overflow-x: hidden;
+  }
+
   body {
     font-family: var(--font-sans);
     background-color: #0A0A0A;
     color: #E5E5E5;
     overflow-x: hidden;
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
   }
 
   h1, h2, h3, h4, .font-heading {
@@ -20,6 +26,17 @@
 
   code, pre, .font-mono {
     font-family: var(--font-mono);
+  }
+
+  /* Prevent any element from exceeding viewport */
+  *, *::before, *::after {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Exclude specific elements that need to overflow (like scrollable containers) */
+  .overflow-x-auto, .overflow-x-auto * {
+    max-width: none;
   }
 }
 
