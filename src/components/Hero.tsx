@@ -39,7 +39,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreWork, onConnect }) => {
           <div className="lg:col-span-8 space-y-4 sm:space-y-6 min-w-0">
             {/* Small Descriptor */}
             <div className="inline-block">
-              <span className="font-mono text-[10px] sm:text-sm font-semibold tracking-[0.2em] sm:tracking-[0.25em] text-neutral-400 uppercase border-l-2 border-white pl-2.5 sm:pl-3">
+              <span className="font-mono text-[8px] sm:text-[10px] font-semibold tracking-[0.2em] sm:tracking-[0.25em] text-neutral-400 uppercase border-l-2 border-white pl-2.5 sm:pl-3">
                 {PERSONAL_INFO.role}
               </span>
             </div>

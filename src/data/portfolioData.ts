@@ -3,7 +3,7 @@ import { Project, ClientBusinessWork, Capability, HowIBuildStep } from '../types
 export const PERSONAL_INFO = {
   fullName: "HASSAN ABDULSATAR OLAMIDE",
   displayName: "Hassan Abdulsatar Olamide",
-  role: "Product Builder · Full-Stack Developer · Founder",
+  role: "FOUNDER · PRODUCT ENGINEER · DIGITAL BUILDER",
   headline: "I build digital products that move ideas forward.",
   alternativeHeadline: "I turn ambitious ideas into real digital products.",
   supportingCopy: "I'm Hassan Abdulsatar Olamide — a product builder, full-stack developer, and founder focused on turning ideas into useful digital experiences, platforms, and products.",
