@@ -6,7 +6,7 @@ export const PERSONAL_INFO = {
   role: "FOUNDER · PRODUCT ENGINEER · DIGITAL BUILDER",
   headline: "I build digital products that move ideas forward.",
   alternativeHeadline: "I turn ambitious ideas into real digital products.",
-  supportingCopy: "I'm Hassan Abdulsatar Olamide — a product builder, full-stack developer, and founder focused on turning ideas into useful digital experiences, platforms, and products.",
+  supportingCopy: "I'm Hassan Abdulsatar Olamide — a FOUNDER · PRODUCT ENGINEER · DIGITAL BUILDER focused on turning ideas into useful digital experiences, platforms, and products.",
   brandAffiliation: "Building under NAMACO",
   fullBrandName: "NAMACO TECHNOLOGY NIGERIA LIMITED",
   brandStatement: "Building with a long-term technology company mindset under NAMACO TECHNOLOGY NIGERIA LIMITED.",
@@ -28,9 +28,9 @@ export const POSITIONING_COPY = {
 };
 
 export const ABOUT_COPY = {
-  headline: "building from ijebu odeee thinking globally",
+  headline: "building from ijebu ode thinking globally",
   paragraphs: [
-    "I'm Hassan Abdulsatar Olamide, a Nigerian product builder, full-stack developer, and founder interested in building technology that solves real problems.",
+    "I'm Hassan Abdulsatar Olamide, a NigerianFOUNDER · PRODUCT ENGINEER · DIGITAL BUILDER interested in building technology that solves real problems.",
     "I enjoy working across the entire product lifecycle — from figuring out what should be built, to designing the experience, writing the software, connecting the systems, and getting the product into people's hands.",
     "My long-term ambition is to build technology companies from Africa that can compete on a global stage.",
   ],

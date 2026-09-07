@@ -45,7 +45,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreWork, onConnect }) => {
             </div>
 
             {/* Oversized Name Header */}
-            <h1 className="font-heading font-extrabold text-[1.6rem] leading-[1] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl tracking-tight text-white uppercase text-balance break-words">
+            <h1 className="font-heading font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight text-white uppercase text-balance break-words">
               HASSAN ABDULSATAR <br className="hidden sm:inline" />
               <span className="text-neutral-400"> OLAMIDE</span>
             </h1>

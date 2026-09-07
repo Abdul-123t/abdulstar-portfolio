@@ -15,14 +15,14 @@ export const AboutSection: React.FC = () => {
               <span className="w-2 h-2 bg-white rounded-full"></span>
               FOUNDER PERSPECTIVE
             </span>
-            <h2 className="font-heading font-extrabold text-4xl sm:text-6xl text-white tracking-tight">
-              ABOUT HASSAN
+            <h2 className="font-heading font-extrabold text-3xl sm:text-5xl text-white tracking-tight">
+              ABOUT ABDULSATAR
             </h2>
           </div>
 
           {/* Affiliation badge */}
           <div className="flex items-center gap-3 bg-[#121212] border border-neutral-800 px-4 py-2">
-            <span className="font-mono text-xs text-neutral-400">UMBRELLA BRAND:</span>
+            <span className="font-mono text-[8px] sm:text-[9px] text-neutral-400">{ABOUT_COPY.headline}</span>
             <NamacoLogo size="sm" variant="light" />
           </div>
         </div>
