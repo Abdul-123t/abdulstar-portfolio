@@ -18,7 +18,7 @@ export const PERSONAL_INFO = {
   instagramUrl: "https://www.instagram.com/namacotechnology",
   linkedin: "Abdulsatar Hassan",
   linkedinUrl: "https://www.linkedin.com/in/abdulsatar-hassan-31778535a/",
-  location: "Nigeria",
+  location: "Ijebu Ode, Ogun State, Nigeria",
   year: "2026",
 };
 
@@ -28,7 +28,7 @@ export const POSITIONING_COPY = {
 };
 
 export const ABOUT_COPY = {
-  headline: "Building from Africa, thinking globally.",
+  headline: "building from ijebu odeee thinking globally",
   paragraphs: [
     "I'm Hassan Abdulsatar Olamide, a Nigerian product builder, full-stack developer, and founder interested in building technology that solves real problems.",
     "I enjoy working across the entire product lifecycle — from figuring out what should be built, to designing the experience, writing the software, connecting the systems, and getting the product into people's hands.",
@@ -321,6 +321,35 @@ export const SELECTED_PROJECTS: Project[] = [
       metrics: "Live production website serving clients across Lagos and Ogun State.",
     },
   },
+    {
+        id: "stream-eta-kohl",
+        number: "07",
+        name: "STREAM ETA KOH L",
+        category: "WEB APP · PRODUCT",
+        filterCategories: ["WEB APPS", "EXPERIMENTS"],
+        year: "2026",
+        liveUrl: "https://stream-eta-kohl.vercel.app/",
+        description: "A modern streaming platform offering curated video content and live streams.",
+        technologies: ["React", "TypeScript", "Tailwind CSS", "Vite", "Vercel"],
+        role: "Full-Stack Developer",
+        isFeatured: false,
+        previewType: "app",
+        previewImage: "/stream-eta-kohl-preview.png",
+        mockupDetails: {
+            badge: "STREAMING PLATFORM",
+            stats: [
+                { label: "Focus", value: "Video Streaming" },
+                { label: "Architecture", value: "Serverless SPA" },
+                { label: "Deployment", value: "Vercel Edge" },
+            ],
+            features: [
+                "Live streaming integration",
+                "Responsive video player UI",
+                "User authentication with OAuth",
+                "Content discovery and categorization",
+            ],
+        },
+    },
 ];
 
 export const CLIENT_BUSINESS_WORK: ClientBusinessWork[] = [
