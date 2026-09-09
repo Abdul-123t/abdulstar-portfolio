@@ -350,6 +350,35 @@ export const SELECTED_PROJECTS: Project[] = [
             ],
         },
     },
+    {
+      id: "habdul-cargo",
+      number: "08",
+      name: "HABDUL CARGO",
+      category: "PRODUCT · PLATFORM · LOGISTICS",
+      filterCategories: ["PRODUCTS", "WEB APPS", "LOGISTICS"],
+      year: "2026",
+      liveUrl: "https://habdul-cargo.vercel.app/",
+      description: "Cross‑border shipping and logistics platform offering cargo transport, freight forwarding, procurement and express delivery services.",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Vite", "Vercel"],
+      role: "Founder & Full‑Stack Builder",
+      isFeatured: true,
+      previewType: "app",
+      previewImage: "/habdul-cargo-preview.png",
+      mockupDetails: {
+        badge: "CROSS‑BORDER LOGISTICS PLATFORM",
+        stats: [
+          { label: "Focus", value: "Cargo & Freight" },
+          { label: "Architecture", value: "Serverless SPA" },
+          { label: "Deployment", value: "Vercel Edge" }
+        ],
+        features: [
+          "Real‑time shipment tracking",
+          "Multi‑modal freight options",
+          "Integrated quotation system",
+          "Responsive design for global users"
+        ]
+      },
+    },
 ];
 
 export const CLIENT_BUSINESS_WORK: ClientBusinessWork[] = [
