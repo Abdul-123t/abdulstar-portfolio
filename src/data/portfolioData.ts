@@ -30,13 +30,64 @@ export const POSITIONING_COPY = {
 export const ABOUT_COPY = {
   headline: "building from ijebu ode thinking globally",
   paragraphs: [
-    "I'm Hassan Abdulsatar Olamide, a NigerianFOUNDER · PRODUCT ENGINEER · DIGITAL BUILDER interested in building technology that solves real problems.",
+    "I'm Hassan Abdulsatar Olamide, a young Nigerian FOUNDER · PRODUCT ENGINEER · DIGITAL BUILDER interested in building technology that solves real problems.",
     "I enjoy working across the entire product lifecycle — from figuring out what should be built, to designing the experience, writing the software, connecting the systems, and getting the product into people's hands.",
     "My long-term ambition is to build technology companies from Africa that can compete on a global stage.",
   ],
 };
 
 export const SELECTED_PROJECTS: Project[] = [
+  {
+    id: "habdul-cargo",
+    number: "00",
+    name: "HABDUL CARGO",
+    category: "CORPORATE WEBSITE · LOGISTICS & CARGO",
+    filterCategories: ["CLIENT WORK", "WEB APPS"],
+    year: "2026",
+    liveUrl: "https://habdul-cargo.vercel.app/",
+    description: "A premium corporate website for HABDUL CARGO, a cross-border shipping and logistics company providing reliable cargo transportation and freight forwarding.",
+    longDescription: "HABDUL CARGO is a modern logistics and cargo website designed to communicate trust, reliability, and operational capability. The website presents HABDUL CARGO as a professional cross-border logistics partner, with dedicated sections for shipping services, destinations, procurement, express delivery, FAQs, workflow, trust, and customer contact.",
+    technologies: ["React", "TypeScript", "Vite", "CSS", "Git", "GitHub"],
+    role: "UI/UX Design & Frontend Development",
+    isFeatured: true,
+    previewType: "website",
+    previewImage: "/assets/habdul-cargo-preview.png",
+    mockupDetails: {
+      badge: "LOGISTICS PLATFORM",
+      stats: [
+        { label: "Focus", value: "Cross-Border Shipping" },
+        { label: "Role", value: "Design & Frontend" },
+        { label: "Status", value: "Completed" },
+      ],
+      features: [
+        "Premium corporate logistics design",
+        "Responsive mobile, tablet, and desktop experience",
+        "Interactive quotation/contact experience",
+        "WhatsApp contact integration",
+      ],
+    },
+    caseStudy: {
+      overview: "Created a polished digital presence that organizes HABDUL CARGO's services into a clear customer journey, communicates trust, and provides straightforward paths for visitors to request information or make contact.",
+      problem: "Traditional logistics businesses often have websites that are difficult to navigate, visually outdated, or fail to clearly communicate their services and credibility to potential customers.",
+      productVision: "To design a premium, modern, corporate, and trustworthy visual language combining strong typography, high-quality cargo imagery, structured layouts, and clear calls to action to reflect the professionalism of a global logistics company.",
+      userExperience: "Dedicated sections for shipping services, destinations, procurement, express delivery, FAQs, workflow, trust, and customer contact.",
+      design: "Premium, modern, corporate, and trustworthy. The visual language combines strong typography, high-quality cargo imagery, structured layouts, and clear calls to action.",
+      technicalArchitecture: "Component-driven React frontend initialized via Vite.",
+      authentication: "N/A",
+      database: "N/A",
+      deployment: "Deployed using modern Git/GitHub version control.",
+      challenges: "Ensuring the website accurately reflects the professionalism and global reach of a cross-border logistics company while maintaining a simple and intuitive user experience.",
+      lessonsLearned: "Clear service communication and direct customer contact pathways are essential for logistics platforms.",
+      metrics: "A production-ready corporate logistics website with a strong visual identity, responsive experience, clear service communication, and direct customer contact pathways.",
+      architectureDiagram: {
+        title: "Habdul Cargo Architecture",
+        nodes: [
+          { label: "React + Vite SPA", sub: "Client Interface", type: "client" },
+          { label: "Static Hosting", sub: "Global Hosting", type: "deploy" },
+        ],
+      },
+    },
+  },
   {
     id: "veyra",
     number: "01",
@@ -349,35 +400,6 @@ export const SELECTED_PROJECTS: Project[] = [
                 "Content discovery and categorization",
             ],
         },
-    },
-    {
-      id: "habdul-cargo",
-      number: "08",
-      name: "HABDUL CARGO",
-      category: "PRODUCT · PLATFORM · LOGISTICS",
-      filterCategories: ["PRODUCTS", "WEB APPS", "LOGISTICS"],
-      year: "2026",
-      liveUrl: "https://habdul-cargo.vercel.app/",
-      description: "Cross‑border shipping and logistics platform offering cargo transport, freight forwarding, procurement and express delivery services.",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Vite", "Vercel"],
-      role: "Founder & Full‑Stack Builder",
-      isFeatured: true,
-      previewType: "app",
-      previewImage: "/habdul-cargo-preview.png",
-      mockupDetails: {
-        badge: "CROSS‑BORDER LOGISTICS PLATFORM",
-        stats: [
-          { label: "Focus", value: "Cargo & Freight" },
-          { label: "Architecture", value: "Serverless SPA" },
-          { label: "Deployment", value: "Vercel Edge" }
-        ],
-        features: [
-          "Real‑time shipment tracking",
-          "Multi‑modal freight options",
-          "Integrated quotation system",
-          "Responsive design for global users"
-        ]
-      },
     },
 ];
 

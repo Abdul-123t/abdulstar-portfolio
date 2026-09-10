@@ -1,4 +1,4 @@
-export type FilterCategory = 'ALL' | 'PRODUCTS' | 'CLIENT WORK' | 'WEB APPS' | 'EXPERIMENTS' | 'LOGISTICS';
+export type FilterCategory = 'ALL' | 'PRODUCTS' | 'CLIENT WORK' | 'WEB APPS' | 'EXPERIMENTS';
 
 export interface CaseStudySection {
   number: string;
